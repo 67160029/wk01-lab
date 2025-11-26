@@ -17,6 +17,11 @@
       <button id="btn">คลิกฉัน!</button>
       <div id="message">ยินดีต้อนรับสู่โลกของ Web Development</div>
     </div>
-    <script src="script.js"></script>
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        const msg = document.getElementById("message");
+        msg.style.display = msg.style.display === "none" ? "block" : "none";
+      });
+    </script>
   </body>
 </html>
